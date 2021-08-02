@@ -3,8 +3,8 @@ Manage documents
 and compute relevance of a given
 term within a given directory.
  */
-
 import searchEngine.SearchEngine;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
@@ -15,7 +15,7 @@ public class Search {
     public static void main(String[] args) throws IOException {
         Scanner console = new Scanner(System.in);
         //Test path
-//        Document doc = new Document("C:\\Users\\andre\\IdeaProjects\\TF-IDF Search Engine\\src\\test_files\\lyrics.txt");
+//        Document doc = new Document("C:\\Users\\andre\\IdeaProjects\\TF-IDF Search Engine\\Search-Engine\\src\\test_files\\lyrics.txt");
 //        System.out.println(doc);
 //        System.out.println(doc.term_frequency("and"));
 //        System.out.println(doc.get_words());
@@ -24,7 +24,7 @@ public class Search {
     }
 
     public static void main(Scanner console) throws IOException {
-        System.out.println("Welcome to 6oog13!!");
+        System.out.println("Welcome to Java TF-IDF Search Engine!");
         System.out.println("Please enter a the name of a directory: ");
         String directory = console.nextLine();
 
