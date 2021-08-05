@@ -13,6 +13,9 @@ The term frequency represents how often a search term appears in a certain docum
 
 As filler words such as “the” or "I" are so common, TF often incorrectly weight documents that use these filler words often. The inverse document frequency is a measure of how often the word appears in the entire set of documents. Use this value minimizes the weight of terms that occur very frequently.
 
+**Term frecuency-inverse Document Frecuency**
+TF-IDF is a statistic that portrays how important a word is to a document. The statistic increases proportionally to the number of times a word appears in the document, but is offset by the number of times the word appears in the entire directory. This helps to control for the fact that some words, such as 'the' or 'and' are generally more common than others.
+
 ## Classes
 - **search.java**: A Java file which will allows a user to run a new TF-IDF search engine at the command line.
 - **Document.java**: Represents one document in the search engie, holding its path and words.
