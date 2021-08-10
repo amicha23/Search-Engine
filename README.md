@@ -16,6 +16,11 @@ As filler words such as “the” or "I" are so common, TF often incorrectly wei
 **Term frecuency-inverse Document Frecuency**
 TF-IDF is a statistic that portrays how important a word is to a document. The statistic increases proportionally to the number of times a word appears in the document, but is offset by the number of times the word appears in the entire directory. This helps to control for the fact that some words, such as 'the' or 'and' are generally more common than others.
 
+## Algorithm
+1. Compute the TF-IDF score for each document in the given directory that contains the given query. 
+2. Sort the documents in descending order of TF-IDF.
+3. Return the document names as a ranked list.
+
 ## Classes
 - **search.java**: A Java file which will allows a user to run a new TF-IDF search engine at the command line.
 - **Document.java**: Represents one document in the search engie, holding its path and words.
