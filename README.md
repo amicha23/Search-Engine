@@ -23,5 +23,17 @@ TF-IDF is a statistic that portrays how important a word is to a document. The s
 
 ## How to use
 - Enter a directory into the command line
-- Enter a term 
-- A ranked list appears presenting the relevance of each document in the directory to that given term
+
+![Search Directory](/img/search.PNG)
+
+- Enter a single term 
+
+![Search Directory](/img/query.PNG)
+
+- A ranked list appears presenting the relevance of each document in the directory to the given query based on the TF-IDF calculation of the term.
+
+- Enter a multi-query
+
+![Search Directory](/img/queries.PNG)
+
+- The search engine will compute the TF-IDF for each individual term in the query and then sum these terms to find the total TF-IDF. Instead of looking at a single query, the search engine looks at all the documents in the directory which contain at least one word in the multi-query. This means if the query is “I love dogs” the TF-IDF should be calculated for all documents in the directory that contain the word “a”, all documents that contain the word “love”, and all documents that contain the word “dogs”. Even if a document only contains the word “a”, it is still included in the ranking; however, it will just be lower because its TF-IDF score for “love” and “dog” will be 0.
