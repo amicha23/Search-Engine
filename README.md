@@ -18,7 +18,7 @@ TF-IDF is a statistic that portrays how important a word is to a document. The s
 
 ## Algorithm
 1. Compute the TF-IDF score for each document in the given directory that contains the given query. 
-2. Sort the documents in descending order of TF-IDF.
+2. Sort the documents in descending order of TF-IDF value.
 3. Return the document names as a ranked list.
 
 ## Classes
