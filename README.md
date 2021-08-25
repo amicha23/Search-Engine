@@ -11,7 +11,7 @@ The term frequency represents how often a search term appears in a certain docum
 
 **Inverse Document Frequency (IDF)**
 
-As filler words such as “the” or "I" are so common, TF often incorrectly weight documents that use these filler words often. The inverse document frequency is a measure of how often the word appears in the entire set of documents. Use this value minimizes the weight of terms that occur very frequently.
+As filler words such as “the” or "I" are so common, TF often incorrectly weight documents that use these filler words often. The inverse document frequency is a measure of how often the word appears in the entire set of documents. Use of this value minimizes the weight of terms that occur very frequently.
 
 **Term frequency-inverse Document Frequency**
 TF-IDF is a statistic that portrays how important a word is to a document. The statistic increases proportionally to the number of times a word appears in the document, but is offset by the number of times the word appears in the entire directory. This helps to control for the fact that some words, such as 'the' or 'and' are generally more common than others.
@@ -22,8 +22,8 @@ TF-IDF is a statistic that portrays how important a word is to a document. The s
 3. Return the document names as a ranked list.
 
 ## Classes
-- **search.java**: A Java file which will allows a user to run a new TF-IDF search engine at the command line.
-- **Document.java**: Represents one document in the search engie, holding its path and words.
+- **search.java**: A Java file which will allow a user to run a new TF-IDF search engine at the command line.
+- **Document.java**: Represents one document in the search engine, holding its path and words.
 - **SearchEngine.java**: use the TF-IDF algorithm to rank the relevance of each document in a directory to a given term.
 
 ## How to use
@@ -41,4 +41,4 @@ TF-IDF is a statistic that portrays how important a word is to a document. The s
 
 ![Search Directory](/img/queries.PNG)
 
-- The search engine will compute the TF-IDF for each individual term in the query and then sum these terms to find the total TF-IDF. Instead of looking at a single query, the search engine looks at all the documents in the directory which contain at least one word in the multi-query. This means if the query is “I love dogs” the TF-IDF should be calculated for all documents in the directory that contain the word “a”, all documents that contain the word “love”, and all documents that contain the word “dogs”. Even if a document only contains the word “a”, it is still included in the ranking; however, it will just be lower because its TF-IDF score for “love” and “dog” will be 0.
+- The search engine will compute the TF-IDF for each individual term in the query and then sum these terms to find the total TF-IDF. Instead of looking at a single query, the search engine looks at all the documents in the directory which contain at least one word in the multi-query. This means if the query is “I love dogs” the TF-IDF should be calculated for all documents in the directory that contain the word “I”, all documents that contain the word “love”, and all documents that contain the word “dogs”. Even if a document only contains the word “I”, it is still included in the ranking; however, it will just be lower because its TF-IDF score for “love” and “dog” will be 0.
