@@ -1,7 +1,7 @@
 # Search Engine
 
 ## Goal
-Implement a document ranking search engine using a TF-IDF (term frequency- inverse document frequency) algorithm.
+Implement a document ranking search engine using a TF-IDF (term frequency-inverse document frequency) algorithm.
 
 The TF-IDF algorithm consists of two main computations.
 
@@ -13,7 +13,7 @@ The term frequency represents how often a search term appears in a certain docum
 
 As filler words such as “the” or "I" are so common, TF often incorrectly weight documents that use these filler words often. The inverse document frequency is a measure of how often the word appears in the entire set of documents. Use this value minimizes the weight of terms that occur very frequently.
 
-**Term frecuency-inverse Document Frecuency**
+**Term frequency-inverse Document Frequency**
 TF-IDF is a statistic that portrays how important a word is to a document. The statistic increases proportionally to the number of times a word appears in the document, but is offset by the number of times the word appears in the entire directory. This helps to control for the fact that some words, such as 'the' or 'and' are generally more common than others.
 
 ## Algorithm
